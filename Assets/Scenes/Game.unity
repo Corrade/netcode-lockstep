@@ -684,7 +684,8 @@ GameObject:
   - component: {fileID: 832537632}
   - component: {fileID: 832537630}
   - component: {fileID: 832537633}
-  - component: {fileID: 832537634}
+  - component: {fileID: 832537636}
+  - component: {fileID: 832537635}
   m_Layer: 0
   m_Name: SelfPlayer
   m_TagString: Untagged
@@ -701,21 +702,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 832537625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 394e4c9a913a70b49a00f1241b2a5c7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 07b7559625fe7ed4494bc66d7271e641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObstacleLayers:
-  - Obstacle
-  GroundCheckDistance: 0.05
-  MaximumGroundAngle: 45
-  GroundSpeed: 16
-  AirStrafeSpeed: 7
-  AirStrafeInfluenceSpeed: 7
-  GravityDownForce: 130
-  JumpMagnitude: 40
-  KickMagnitude: 35
-  KickAngle: 60
-  KickCollider: {fileID: 978600159}
 --- !u!50 &832537627
 Rigidbody2D:
   serializedVersion: 4
@@ -867,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b7559625fe7ed4494bc66d7271e641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &832537634
+--- !u!114 &832537635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -876,9 +865,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 832537625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2482e9af91043e54086bd26c4b1848c4, type: 3}
+  m_Script: {fileID: 11500000, guid: c3eed81c500b21f40a7c0da90a5844b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &832537636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832537625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae51846f621b6ae4eb238bfe84f8f98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstacleLayers:
+  - Obstacle
+  GroundCheckDistance: 0.05
+  MaximumGroundAngle: 45
+  GroundSpeed: 16
+  AirStrafeSpeed: 7
+  AirStrafeInfluenceSpeed: 7
+  GravityDownForce: 130
+  JumpMagnitude: 40
+  KickMagnitude: 35
+  KickAngle: 60
+  KickCollider: {fileID: 978600159}
 --- !u!1 &858287199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +1654,8 @@ GameObject:
   - component: {fileID: 1748627595}
   - component: {fileID: 1748627594}
   - component: {fileID: 1748627600}
-  - component: {fileID: 1748627601}
+  - component: {fileID: 1748627603}
+  - component: {fileID: 1748627602}
   m_Layer: 0
   m_Name: PeerPlayer
   m_TagString: Untagged
@@ -1750,21 +1764,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1748627592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 394e4c9a913a70b49a00f1241b2a5c7e, type: 3}
+  m_Script: {fileID: 11500000, guid: 07b7559625fe7ed4494bc66d7271e641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObstacleLayers:
-  - Obstacle
-  GroundCheckDistance: 0.05
-  MaximumGroundAngle: 45
-  GroundSpeed: 16
-  AirStrafeSpeed: 7
-  AirStrafeInfluenceSpeed: 7
-  GravityDownForce: 130
-  JumpMagnitude: 40
-  KickMagnitude: 35
-  KickAngle: 60
-  KickCollider: {fileID: 1817202218}
 --- !u!50 &1748627598
 Rigidbody2D:
   serializedVersion: 4
@@ -1824,7 +1826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b7559625fe7ed4494bc66d7271e641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1748627601
+--- !u!114 &1748627602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1833,9 +1835,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1748627592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2482e9af91043e54086bd26c4b1848c4, type: 3}
+  m_Script: {fileID: 11500000, guid: c3eed81c500b21f40a7c0da90a5844b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1748627603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748627592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae51846f621b6ae4eb238bfe84f8f98b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstacleLayers:
+  - Obstacle
+  GroundCheckDistance: 0.05
+  MaximumGroundAngle: 45
+  GroundSpeed: 16
+  AirStrafeSpeed: 7
+  AirStrafeInfluenceSpeed: 7
+  GravityDownForce: 130
+  JumpMagnitude: 40
+  KickMagnitude: 35
+  KickAngle: 60
+  KickCollider: {fileID: 1817202218}
 --- !u!1 &1749903530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,6 +2302,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 832537629}
     m_Modifications:
+    - target: {fileID: 2016685390, guid: 6bb8a60a82265ef46ae5b625beb12e83, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 832537632}
     - target: {fileID: 6469130722164957512, guid: 6bb8a60a82265ef46ae5b625beb12e83, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2612,6 +2642,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1748627593}
     m_Modifications:
+    - target: {fileID: 2016685390, guid: 6bb8a60a82265ef46ae5b625beb12e83, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1748627595}
     - target: {fileID: 6469130722164957512, guid: 6bb8a60a82265ef46ae5b625beb12e83, type: 3}
       propertyPath: m_RootOrder
       value: 0
